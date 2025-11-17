@@ -30,12 +30,14 @@ Install the necessary Python libraries using the following command:
 
 ```bash
 pip install pandas requests tqdm beautifulsoup4 langdetect mlxtend seaborn matplotlib
+```
 
 ### GitHub Authentication
 The data extraction script (`extract_reposity_information.py`) relies heavily on the GitHub REST API. To prevent hitting rate limits, you **must** set your GitHub Personal Access Token as an environment variable:
 
 ```bash
 export GITHUB_TOKEN="your_personal_access_token"
+```
 
 ## 2. Data Collection and Processing Pipeline
 
@@ -52,6 +54,7 @@ The replication process is executed in three sequential steps.
 To run this step:
 ```bash
 python filter_prompt_files.py
+```
 
 ### Step 2: Repository Information Extraction
 
@@ -64,6 +67,7 @@ python filter_prompt_files.py
 To run this step (requires `GITHUB_TOKEN`):
 ```bash
 python extract_reposity_information.py
+```
 
 ### Step 3: Final Dataset Preparation (Manual and Filtered)
 
@@ -94,5 +98,5 @@ To run the analysis scripts:
 ```bash
 python association_rule.py
 python heatmap.py
-
+```
 
