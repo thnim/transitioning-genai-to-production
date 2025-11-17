@@ -13,8 +13,8 @@ The repository files are organized as follows in the main directory:
 | `filter_prompt_files.py` | Python Script | Executes the data filtering process (Step 1). |
 | `extract_reposity_information.py` | Python Script | Executes the repository information extraction (Step 2). |
 | `repository_dataset.csv` | Intermediate Data | Output of Step 2, containing all extracted repository metadata. |
-| `association_rule.py` | Python Script | Executes the association rule analysis (Step 4.1). |
-| `heatmap.py` | Python Script | Executes the heatmap visualization (Step 4.2). |
+| `association_rule.py` | Python Script | Executes the association rule analysis (Step 3.1). |
+| `heatmap.py` | Python Script | Executes the heatmap visualization (Step 3.2). |
 | `study_result/` | Output Directory | Contains final processed data from analysis. |
 | `README.md` | This file | Provides an overview of the package and replication steps. |
 
@@ -77,13 +77,13 @@ The `repository_dataset.csv` was further refined to create the **Final Dataset**
 
 The core analysis of the final dataset is performed using the scripts below.
 
-### 4.1. Association Rule Mining
+### 3.1. Association Rule Mining
 
 **Script:** `association_rule.py`
 
 **Purpose:** To find meaningful relationships (association rules) of README doucumentation sections pattern.
 
-### 4.2. Visualization (Heatmap)
+### 3.2. Visualization (Heatmap)
 
 **Script:** `heatmap.py`
 
